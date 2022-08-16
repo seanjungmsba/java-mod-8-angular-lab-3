@@ -1,0 +1,27 @@
+<table border = "1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sport</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor= "let tempAthlete of athleteList">
+      <td>*{{tempAthlete.name}}</td>
+      <td>({{tempAthlete.sport}})</td>
+      <!-- <td>{{tempAthlete.active}}</td> -->
+      <td *ngIf= "tempAthlete.active; else notActive">
+          is active
+      </td>
+      <ng-template #notActive>
+          is not active
+      </ng-template>
+    </tr>
+  </tbody>
+</table>
+
+
+
+

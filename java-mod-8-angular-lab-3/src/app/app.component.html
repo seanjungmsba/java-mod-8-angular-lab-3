@@ -1,0 +1,53 @@
+<!-- Enter name of the application: <input type="text" [(ngModel)]="title" />
+<p>My Application is {{ title }}</p> -->
+
+<!-- <p>Sender name: <input type="text" [(ngModel)]="senderName" /></p>
+<p>Message: <input type="text" [(ngModel)]="senderMessage" /></p>
+
+<div>
+  <button [disabled]= "disableNewMessage" (click)= "onSendMessage()">Create</button>
+</div> -->
+
+<!-- <app-athlete-list></app-athlete-list> -->
+
+<!-- <div>
+  <h1>Chat Application</h1>
+  <h2>Send Message</h2>
+  <p>Sender name: <input type="text" [(ngModel)]="senderName" /></p>
+  <p>Message: <input type="text" [(ngModel)]="senderMessage" /></p>
+  <div>
+    <button (click)="onSendMessage()">Send Message</button>
+  </div>
+
+  <h2>Messages</h2>
+  <div>
+    <ul>
+      <li *ngFor= "let currentMessage of messages">
+        {{currentMessage.sender}}: {{currentMessage.message}}
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<div>
+  <h1>Athlete Activity Bulletin</h1>
+  <h2>Add athlete by providng the following info: </h2>
+  <p>Player Name: <input type="text" [(ngModel)]="playerName" /></p>
+  <p>Player Sport: <input type="text" [(ngModel)]="playerSport" /></p>
+  <p>Player Status: <input type="boolean" [(ngModel)]="playerStatus" /></p>
+  <div>
+    <button [disabled]= "disableNewMessage" (click)= "onSendAthlete()">Click to Add</button>
+  </div>
+
+  <h2>Athletes in our records: </h2>
+  <div>
+    <ul>
+      <li *ngFor= "let currentAthelete of athletes">
+        {{currentAthelete.name}}
+        ({{currentAthelete.sport}})
+        <span *ngIf= "currentAthelete.active == true" > is active </span>
+        <span *ngIf= "currentAthelete.active == false" > is not active </span>
+      </li>
+    </ul>
+  </div>
+</div>
