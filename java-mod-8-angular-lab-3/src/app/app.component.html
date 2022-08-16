@@ -34,7 +34,8 @@
   <h2>Add athlete by providng the following info: </h2>
   <p>Player Name: <input type="text" [(ngModel)]="playerName" /></p>
   <p>Player Sport: <input type="text" [(ngModel)]="playerSport" /></p>
-  <p>Player Status: <input type="boolean" [(ngModel)]="playerStatus" /></p>
+  <!-- <p>Player Status: <input type="boolean" [(ngModel)]="playerStatus" /></p> -->
+  <p>Player Status: <input type="checkbox" [(ngModel)]="playerStatus" /></p>
   <div>
     <button [disabled]= "disableNewMessage" (click)= "onSendAthlete()">Click to Add</button>
   </div>
